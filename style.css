@@ -1,0 +1,77 @@
+html {
+    background-image: url('images/back.jpg');
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid #292c2e;
+    margin: 50px auto;
+    border-radius: 50%;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+    background-image: url('images/whale.jpg');
+    opacity: 0.95;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: #141617;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    
+}
+
+.hour-hand {
+    position: absolute;
+    width: 40%;
+    height: 6px;
+    /* transform-origin: 126%; */
+    transform-origin: center bottom
+    top: 56%;
+    left: 10%;
+}
+
+.second-hand {
+    position: absolute;
+    width: 50%;
+    height: 3px;
+}
+
+.circle {
+    width:3%;
+    height: 15px;
+    border-radius: 50%;
+    transform-origin: 126%;
+    position: absolute;
+    top: 49%;
+    left: 48.5%;
+    background: #141617;
+}
